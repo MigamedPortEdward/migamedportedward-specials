@@ -4,10 +4,10 @@ const phone = "27795882835";
 
 const products = {
   alkafizzMB120g: { name: "AlkaFizz Mixed Berry - 120g", price: 59.99, active: false },
-  benylin4FL200ml: { name: "Benylin 4 Flu Liquid - 200ml", price: 104.99, active: true },
+  benylin4FL200ml: { name: "Benylin 4 Flu Liquid - 200ml", price: 104.99, active: false },
   beroccaboost10Eff: { name: "Berocca Boost - 10 Effervescent", price: 79.99, active: true },
   calpolPS100ml: { name: "Calpol Paediatric Suspension - 100ml", price: 60.99, active: true },
-  cancard30Tab: { name: "Cancard - 30 Tablets", price: 54.99, active: true },
+  cancard30Tab: { name: "Cancard - 30 Tablets", price: 54.99, active: false },
   carebysparCCBW500ml: { name: "Care by SPAR Cream Caress Body Wash - 500ml", price: 34.99, active: true },
   carebysparESBW500ml: { name: "Care by SPAR Evening Star Body Wash - 500ml", price: 34.99, active: true },
   carebysparPEBW500ml: { name: "Care by SPAR Pure Escape Body Wash - 500ml", price: 34.99, active: true },
@@ -17,8 +17,8 @@ const products = {
   iberogastOL20ml: { name: "Iberogast Oral Liquid - 20ml", price: 99.99, active: true },
   johnsonsBWES56Wip: { name: "Johnson's Baby Wipes Extra Sensitive - 56 Wipes", price: 19.99, active: true },
   menacal730Tab: { name: "MenaCal 7 - 30 Tablets", price: 134.99, active: true },
-  nurofenFC4O100ml: { name: "Nurofen for Children 4% Orange - 100ml", price: 139.99, active: true },
-  nurofenFC4S100ml: { name: "Nurofen for Children 4% Strawberry - 100ml", price: 139.99, active: true },
+  nurofenFC4O100ml: { name: "Nurofen for Children 4% Orange - 100ml", price: 139.99, active: false },
+  nurofenFC4S100ml: { name: "Nurofen for Children 4% Strawberry - 100ml", price: 139.99, active: false },
   panado20Cap: { name: "Panado - 20 Capsules", price: 44.99, active: true },
   panado24Tab: { name: "Panado - 24 Tablets Spartan", price: 29.99, active: true },
   panadoPSPM50ml: { name: "Panado Peppermint Paediatric Syrup - 50ml", price: 34.99, active: true },
@@ -41,7 +41,7 @@ const products = {
   strepsilsO24Loz: { name: "Strepsils Original - 24 Lozenges", price: 74.99, active: false },
   transact5Pat: { name: "Transact - 5 Patches", price: 104.99, active: true },
   voltarenE50g: { name: "Voltaren Emulgel - 50g", price: 129.99, active: true },
-  voltarenE12H50g: { name: "Voltaren Emulgel 12 Hour - 50g", price: 229.99, active: true }
+  voltarenE12H50g: { name: "Voltaren Emulgel 12 Hour - 50g", price: 229.99, active: false }
 };
 
 let order = {};
