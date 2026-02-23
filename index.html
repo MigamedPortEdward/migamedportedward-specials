@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Migamed Pharmacy Specials</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- FULL WIDTH LOGO + BANNER -->
+<div class="full-width">
+  <div class="logo-bar">
+    <img src="images/logo.png" alt="Pharmacy Logo">
+  </div>
+
+  <div class="header">
+    <h2>Pharmacy Specials</h2>
+    <h5>Offers valid until 19 March 2026, while stocks last</h5>
+  </div> 
+</div>
+
+<div class="container">
+
+<!-- AUTO GENERATED PRODUCTS -->
+<div class="grid" id="productGrid"></div>
+
+<!-- DELIVERY / COLLECTION -->
+<div class="order-box">
+<h3>Order Method</h3>
+
+<label><input type="radio" name="method" value="collection" checked> Collection</label><br>
+<label><input type="radio" name="method" value="delivery"> Delivery</label>
+
+<div id="deliveryOptions" style="display:none; margin-top:10px;">
+  <input type="text" id="street" placeholder="Street address" style="width:100%; margin-bottom:6px;">
+  <input type="text" id="suburb" placeholder="Suburb" style="width:100%; margin-bottom:6px;">
+  <input type="text" id="city" placeholder="City" style="width:100%; margin-bottom:10px;">
+
+  <label><input type="radio" name="zone" value="free"> 0–5 km (Free)</label><br>
+  <label><input type="radio" name="zone" value="quote"> 5+ km (Calculated by pharmacist)</label>
+</div>
+
+<button class="send" onclick="sendOrder()">Send Order on WhatsApp</button>
+</div>
+
+</div>
+
+<div style="text-align:center; margin-top:30px; font-size:14px; color:#333;">
+  <strong>Migamed Port Edward Pharmacy at Spar</strong><br>
+  3 Owen Ellis Drive, Port Edward<br>
+  Email: migamed@mweb.co.za<br>
+  Cell: 079 588 2835 | Tel: 039 311 3631
+  <h1></h1>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
