@@ -155,3 +155,29 @@ body {
     display: none;
   }
 }
+
+.promo-banner {
+  background: #25D366;
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.promo-content h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.promo-content p {
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.promo-note {
+  font-size: 14px;
+  opacity: 0.9;
+}
