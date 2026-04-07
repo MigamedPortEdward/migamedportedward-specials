@@ -5,42 +5,47 @@ const phone = "27795882835";
 const products = {
   alkafizzMB120g: { name: "AlkaFizz Mixed Berry - 120g", price: 59.99, active: false },
   benylin4FL200ml: { name: "Benylin 4 Flu Liquid - 200ml", price: 104.99, active: false },
-  beroccaboost10Eff: { name: "Berocca Boost - 10 Effervescent", price: 79.99, active: true },
-  calpolPS100ml: { name: "Calpol Paediatric Suspension - 100ml", price: 60.99, active: true },
+  beroccaboost10Eff: { name: "Berocca Boost - 10 Effervescent", price: 79.90, active: true },
+  calpolPS100ml: { name: "Calpol Paediatric Suspension - 100ml", price: 60.99, active: false },
   cancard30Tab: { name: "Cancard - 30 Tablets", price: 54.99, active: false },
-  carebysparCCBW500ml: { name: "Care by SPAR Cream Caress Body Wash - 500ml", price: 34.99, active: true },
-  carebysparESBW500ml: { name: "Care by SPAR Evening Star Body Wash - 500ml", price: 34.99, active: true },
-  carebysparPEBW500ml: { name: "Care by SPAR Pure Escape Body Wash - 500ml", price: 34.99, active: true },
+  carebysparCCBW500ml: { name: "Care by SPAR Cream Caress Body Wash - 500ml", price: 34.99, active: false },
+  carebysparESBW500ml: { name: "Care by SPAR Evening Star Body Wash - 500ml", price: 34.99, active: false },
+  carebysparPEBW500ml: { name: "Care by SPAR Pure Escape Body Wash - 500ml", price: 34.99, active: false },
   disprinES16Tab: { name: "Disprin Extra Strength - 16 Tablets", price: 19.99, active: false },
-  gavisconDA8Tab: { name: "Gaviscon Double Action - 8 Tablets", price: 24.99, active: true },
-  grandpaHP12Sti: { name: "Grand-Pa Headache Powder - 12 Stick Packs", price: 39.99, active: true },
-  iberogastOL20ml: { name: "Iberogast Oral Liquid - 20ml", price: 99.99, active: true },
-  johnsonsBWES56Wip: { name: "Johnson's Baby Wipes Extra Sensitive - 56 Wipes", price: 19.99, active: true },
-  menacal730Tab: { name: "MenaCal 7 - 30 Tablets", price: 134.99, active: true },
+  gavisconDA8Tab: { name: "Gaviscon Double Action - 8 Tablets", price: 24.90, active: true },
+  grandpaHP12Sti: { name: "Grand-Pa Headache Powder - 12 Stick Packs", price: 39.99, active: false },
+  grandpaHP38Sti: { name: "Grand-Pa Headache Powder - 38 Stick Packs", price: 99.90, active: true },
+  iberogastOL20ml: { name: "Iberogast Oral Liquid - 20ml", price: 99.99, active: false },
+  johnsonsBWES56Wip: { name: "Johnson's Baby Wipes Extra Sensitive - 56 Wipes", price: 19.90, active: true },
+  linctagonCN200Value1plus1: { name: "Linctagon-C NAC200 Buy 1 Get 1 Free", price: 189.90, active: true, bogo: true },
+  menacal730Tab: { name: "MenaCal 7 - 30 Tablets", price: 134.99, active: false },
   nurofenFC4O100ml: { name: "Nurofen for Children 4% Orange - 100ml", price: 139.99, active: false },
   nurofenFC4S100ml: { name: "Nurofen for Children 4% Strawberry - 100ml", price: 139.99, active: false },
-  panado20Cap: { name: "Panado - 20 Capsules", price: 44.99, active: true },
-  panado24Tab: { name: "Panado - 24 Tablets Spartan", price: 29.99, active: true },
-  panadoPSPM50ml: { name: "Panado Peppermint Paediatric Syrup - 50ml", price: 34.99, active: true },
-  panadoPSSB50ml: { name: "Panado Strawberry Paediatric Syrup - 50ml", price: 34.99, active: true },
-  pharmacyatsparCTBeige5cmx45m: { name: "Pharmacy at SPAR Cohesive Tape Beige - 5cmx4.5m", price: 29.99, active: true },
-  pharmacyatsparCTBlack5cmx45m: { name: "Pharmacy at SPAR Cohesive Tape Black - 5cmx4.5m", price: 29.99, active: true },
-  pharmacyatsparHABK: { name: "Pharmacy at SPAR Handy Aid - Burn Kit", price: 54.99, active: true },
-  pharmacyatsparHAPK: { name: "Pharmacy at SPAR Handy Aid - Plaster Kit", price: 54.99, active: true },
-  pharmacyatsparFM60Cap: { name: "Pharmacy at SPAR Family Multivitamin - 60 Capsules", price: 74.99, active: true },
-  pharmacyatsparKMGR60Gum: { name: "Pharmacy at SPAR Kids Multivitamin Gummies Raspberry - 60 Gummies", price: 69.99, active: true },
-  pharmacyatsparVBC60Cap: { name: "Pharmacy at SPAR Vitamin B-Complex - 60 Capsules", price: 79.99, active: true },
-  probifloraIR9S30Cap: { name: "ProbiFlora Intensive Rescue 9 Strain - 30 Capsules", price: 144.99, active: true },
-  rehidratB6Sac: { name: "Rehidrat Blackcurrant - 6 Sachets", price: 79.99, active: true },
-  rehidratO6Sac: { name: "Rehidrat Orange - 6 Sachets", price: 79.99, active: true },
-  slowmag30Cap: { name: "Slow-Mag - 30 Capsules", price: 164.99, active: true },
-  slowmag10Eff: { name: "Slow-Mag - 10 Effervescent", price: 79.99, active: true },
-  sparLW24Wip: { name: "SPAR Lens Wipes - 24 Wipes", price: 20.99, active: true },
-  sparsolaAG125ml: { name: "SPAR Sola Aftersun Gel - 125ml", price: 64.99, active: true },
-  sparsolaSPF50Value200plus70ml: { name: "SPAR Sola SPF50 Spray - 200+70ml", price: 124.99, active: true },
+  osteoezeValue90plus30Cap: { name: "OsteoEze - 90 + 30 Capsules", price: 279.90, active: true },
+  panado20Cap: { name: "Panado - 20 Capsules", price: 44.99, active: false },
+  panado24Tab: { name: "Panado - 24 Tablets Spartan", price: 29.99, active: false },
+  panadoPSPM50ml: { name: "Panado Peppermint Paediatric Syrup - 50ml", price: 34.99, active: false },
+  panadoPSSB50ml: { name: "Panado Strawberry Paediatric Syrup - 50ml", price: 34.99, active: false },
+  pharmacyatsparCTBeige5cmx45m: { name: "Pharmacy at SPAR Cohesive Tape Beige - 5cmx4.5m", price: 29.99, active: false },
+  pharmacyatsparCTBlack5cmx45m: { name: "Pharmacy at SPAR Cohesive Tape Black - 5cmx4.5m", price: 29.99, active: false },
+  pharmacyatsparHABK: { name: "Pharmacy at SPAR Handy Aid - Burn Kit", price: 54.99, active: false },
+  pharmacyatsparHAPK: { name: "Pharmacy at SPAR Handy Aid - Plaster Kit", price: 54.99, active: false },
+  pharmacyatsparFM60Cap: { name: "Pharmacy at SPAR Family Multivitamin - 60 Capsules", price: 74.99, active: false },
+  pharmacyatsparKMGR60Gum: { name: "Pharmacy at SPAR Kids Multivitamin Gummies Raspberry - 60 Gummies", price: 69.99, active: false },
+  pharmacyatsparVBC60Cap: { name: "Pharmacy at SPAR Vitamin B-Complex - 60 Capsules", price: 79.99, active: false },
+  probifloraIR9S30Cap: { name: "ProbiFlora Intensive Rescue 9 Strain - 30 Capsules", price: 144.99, active: false },
+  procydin60Cap: { name: "Procydin - 60 Capsules", price: 149.90, active: true },
+  rehidratB6Sac: { name: "Rehidrat Blackcurrant - 6 Sachets", price: 79.99, active: false },
+  rehidratO6Sac: { name: "Rehidrat Orange - 6 Sachets", price: 79.99, active: false },
+  slowmag30Cap: { name: "Slow-Mag - 30 Capsules", price: 164.99, active: false },
+  slowmag10Eff: { name: "Slow-Mag - 10 Effervescent", price: 79.99, active: false },
+  sparLW24Wip: { name: "SPAR Lens Wipes - 24 Wipes", price: 20.99, active: false },
+  sparsolaAG125ml: { name: "SPAR Sola Aftersun Gel - 125ml", price: 64.99, active: false },
+  sparsolaSPF50Value200plus70ml: { name: "SPAR Sola SPF50 Spray - 200+70ml", price: 124.99, active: false },
+  sparTT2P18Rol: { name: "SPAR Toilet Tissue 2 Ply - 18 Rolls", price: 119.90, active: true },
   strepsilsO24Loz: { name: "Strepsils Original - 24 Lozenges", price: 74.99, active: false },
-  transact5Pat: { name: "Transact - 5 Patches", price: 104.99, active: true },
-  voltarenE50g: { name: "Voltaren Emulgel - 50g", price: 129.99, active: true },
+  transact5Pat: { name: "Transact - 5 Patches", price: 104.99, active: false },
+  voltarenE50g: { name: "Voltaren Emulgel - 50g", price: 129.99, active: false },
   voltarenE12H50g: { name: "Voltaren Emulgel 12 Hour - 50g", price: 229.99, active: false }
 };
 
@@ -85,7 +90,13 @@ window.sendOrder = function() {
   for (let key in order) {
     if (order[key] > 0) {
       message += `- ${products[key].name} x${order[key]}\n`;
-      total += products[key].price * order[key];
+      if (products[key].bogo) {
+        const qty = order[key];
+        const chargedQty = Math.ceil(qty / 2);
+        total += products[key].price * chargedQty;
+      } else {
+        total += products[key].price * order[key];
+      }
       hasItems = true;
     }
   }
