@@ -21,7 +21,7 @@ const products = {
   menacal730Tab: { name: "MenaCal 7 - 30 Tablets", price: 134.99, active: false },
   nurofenFC4O100ml: { name: "Nurofen for Children 4% Orange - 100ml", price: 139.99, active: false },
   nurofenFC4S100ml: { name: "Nurofen for Children 4% Strawberry - 100ml", price: 139.99, active: false },
-  osteoezeValue90plus30Cap: { name: "OsteoEze - 90 + 30 Capsules", price: 279.90, active: true },
+  osteoezeGoldValue90plus30Cap: { name: "OsteoEze Gold - 90 + 30 Capsules", price: 279.90, active: true },
   panado20Cap: { name: "Panado - 20 Capsules", price: 44.99, active: false },
   panado24Tab: { name: "Panado - 24 Tablets Spartan", price: 29.99, active: false },
   panadoPSPM50ml: { name: "Panado Peppermint Paediatric Syrup - 50ml", price: 34.99, active: false },
